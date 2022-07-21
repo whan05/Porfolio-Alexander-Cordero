@@ -1,0 +1,186 @@
+:root {
+    --primario : #759eff;
+    --secundario : #ffa43a;
+    --primarioClaro : #75c7ff;
+    --secundarioClaro : #ffbf75;
+    --gris : #525558;
+    --negro : #000000;
+    --blanco : #ffffff;
+
+    --fuentePrincipal : 'Lato', sans-serif;
+    --fuenteSecundaria: 'Roboto', sans-serif;
+
+    --separacion : 5rem;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+h1, h2, h3 {
+    font-weight: 900;
+    margin: 2rem 0;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 4.6rem;
+}
+h3 {
+    font-size: 3rem;
+}
+a {
+    text-decoration: none;
+    color: var(--negro);
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.active {
+    color: var(--primario);
+}
+
+/* Utilidades */
+
+.text-center {
+    text-align:center;
+}
+
+.grisClaro {
+    color: var(--gris);
+    font-size: 1.4rem;
+}
+
+/* Header */
+
+.header {
+    border-bottom: 1px solid var(--gris);
+}
+
+.header-contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) { 
+    .header-contenido {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header--heading {
+    font-size: 4rem;
+    text-align: center;
+}
+
+span {
+    color: var(--primario);
+}
+
+@media (min-width: 768px) { 
+    .header--heading {
+        font-size : 5rem;
+        text-align: left;
+    }
+}
+
+.navegacion-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) { 
+    .navegacion-contenido {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+    
+}
+
+/* Hero */
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35rem;
+}
+
+@media (min-width: 768px) { 
+    .hero {
+        height: 70rem;
+    }
+}
+
+/* Sobre mi */
+
+@media (min-width: 768px) { 
+    .acerca--grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--separacion);
+        align-items: center;
+    }
+}
+
+.acerca--texto {
+    line-height: 2;
+}
+
+/* Educacion */
+
+.educacion {
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 2rem 0;
+}
+
+/* Experiencia */
+
+.experiencia {
+    border-bottom: 2px solid var(--primario);
+}
+
+@media (min-width: 768px) { 
+    .experiencias-grid {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    
+    .experiencia {
+        padding: 2rem;
+    }
+    
+    .experiencia:nth-child(1) {
+        border-right: 2px solid var(--primario);
+        border-bottom: 2px solid var(--primario);
+    }
+    .experiencia:nth-child(2) {
+        border-bottom: 2px solid var(--primario);
+    }
+    .experiencia:nth-child(3) {
+        border-right: 2px solid var(--primario);
+    }
+    
+}
