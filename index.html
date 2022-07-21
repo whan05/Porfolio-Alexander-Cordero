@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
     <header class="header">
@@ -23,11 +25,11 @@
             <div class="header--navegacion">
                 <nav class="navegacion-contenido">
                     <a class="active" href="#">Home</a>
-                    <a href="">About Me</a>
-                    <a href="">Education</a>
-                    <a href="">Experience</a>
-                    <a href="">Hobbies</a>
-                    <a href="">References</a>
+                    <a href="#about">About Me</a>
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experiences</a>
+                    <a href="#hobbies">Hobbies</a>
+                    <a href="#references">References</a>
                 </nav>
             </div>
         </div>
@@ -35,7 +37,7 @@
     <div class="hero"></div>
     <main>
         <section class="acerca contenedor">
-            <h2 class="text-center">About <span>Me</span></h2>
+            <h2 class="text-center" id="about">About <span>Me</span></h2>
             <div class="acerca--grid">
                 <div class="imagen">
                     <img src="./img/perfil.jpeg" alt="foto de perfil">
@@ -56,13 +58,35 @@
                 </div>
             </div>
         </section>
-        <section class="educacion">
+        <section class="educacion" id="education">
             <h2 class="text-center">Education</h2>
             <div class="educacacion-contenido contenedor">
                 <div class="eduacacion-carrera">
-                    <h3>Colegio Técnico Profesional Mario Quirós S.</h3>
-                    <p>High School Diploma, Accounting, Finance and Banking</p>
-                    <p class="grisClaro">2010 - 2012</p>
+                    <h3>Lifelong Learning CertiProf</h3>
+                    <p class="grisClaro">Issued by CertiProf: Dec 2021 · Expires Dec 2023</p>
+                </div>
+                <hr>
+                <div class="eduacacion-carrera">
+                    <h3>Scrum Master Professional Certificate - SMPC®️
+                    </h3>
+                    <p class="grisClaro">Issued by CertiProf: Apr 2022 · Expires Apr 2024
+                    </p>
+                </div>
+                <hr>
+                <div class="eduacacion-carrera">
+                    <h3>Remote Work and Virtual Collaboration Professional Certificate - RWVCPC</h3>
+                    <p class="grisClaro">Issued by CertiProf: Apr 2022 · Expires Apr 2024</p>
+                </div>
+                <hr>
+                <div class="eduacacion-carrera">
+                    <h3>ITIL Foundation Level Issued by CertiProf</h3>
+                    <p class="grisClaro">Oct 2020 · No Expiration Date</p>
+                </div>
+                <hr>
+                <div class="eduacacion-carrera">
+                    <h3>Universidad Estatal a Distancia de Costa Rica</h3>
+                    <p>Diploma, Business Administration and Management, GeneralDiploma, Business Administration and Management, General</p>
+                    <p class="grisClaro">2015 - 2018</p>
                 </div>
                 <hr>
                 <div class="eduacacion-carrera">
@@ -72,54 +96,109 @@
                 </div>
                 <hr>
                 <div class="eduacacion-carrera">
-                    <h3>Universidad Estatal a Distancia de Costa Rica</h3>
-                    <p>Diploma, Business Administration and Management, GeneralDiploma, Business Administration and Management, General</p>
-                    <p class="grisClaro">2015 - 2018</p>
+                    <h3>Colegio Técnico Profesional Mario Quirós S.</h3>
+                    <p>High School Diploma, Accounting, Finance and Banking</p>
+                    <p class="grisClaro">2010 - 2012</p>
                 </div>
 
             </div>
         </section>
-        <section class="experiencias">
-            <h2 class="text-center">Experciencia</h2>
+        <section class="experiencias" id="experience">
+            <h2 class="text-center">Experiences</h2>
             <div class="experiencias-grid contenedor">
                 <div class="experiencia">
-                    <h3>Assistant for QA and Testing Scotiabank</h3>
-                    <p class="grisClaro"> dic. 2012 - mar. 2014 · 1 año 4 meses</p>
+                    <h3>Tek Experts</h3>
+                    <p class="grisClaro"> mar. 2017 - Currently</p>
+                    <h4>Global Technical Learning Expert</h4>
+                    <h4>Full-Time</h4>
                     <p>San Jose, Costa Rica</p>
+                    <p class="grisClaro">Aug. 2021 - Currently</p>
                     <p>Identified and recommended changes to existing processes to improve accuracy, efficiency and quality service related to systems used in operations.</p>
+                    <h4>Team Manager</h4>
+                    <p class="grisClaro">May. 2020 - Aug. 2021 · 1 year 4 months</p>
+                    <p>San Jose, Costa Rica</p>
+                    <p>Drive staff’s performance by creating positive work atmosphere and stablishing action plans for the team to achieve operation goals.</p>
+                    <p> Boosted team member productivity by enhancing performance monitoring and instituting motivational approaches.</p>
+                    <p>Applied strong leadership talents and problem-solving skills to maintain team efficiency and organize workflows to meet any daily demand.</p>
+                    <h4>Azure Subject Matter Expert</h4>
+                    <p class="grisClaro">Oct. 2018 - May. 2020 · 1 year 8 months</p>
+                    <p>San Jose, Costa Rica</p>
+                    <p>Collaborated with senior management and business line management to identify and prioritize new concepts and projects for development and launch.</p>
+                    <p>Established extensive procedures and documentation for processes and troubleshooting.</p>
+                    <p>Led corporate-wide initiatives to help guide enterprise and business level goals.</p>
+                    <h4>Azure Support Engineer</h4>
+                    <p class="grisClaro">Mar. 2017 - Oct. 2018 · 1 year 8 months</p>
+                    <p>San José, Costa Rica</p>
+                    <p>Delivered exceptionally high level of professionalism and support to each customer, upholding company's commitment to service.</p>
+                    <p>Gathered and organized supplementary material to support structured lessons for new hires and team support.</p>
+                </div>
+                <div class="experiencia">
+                    <h3>Pizza Hut</h3>
+                    <h4>Inventory Supervisor</h4>
+                    <p>Pavas, Costa Rica</p>
+                    <p class="grisClaro">Nov. 2015 - Nov. 2016 · 1 year 1 months</p>
+                    <p>Evaluated supplies and product inventory to check for quality and quantity.</p>
+                    <p>Used hand-held devices and computers to record and monitor inventory levels and completed audits to uncover and address inaccuracies.</p>
                 </div>
                 <div class="experiencia">
                     <h3>General Nutrition Company</h3>
-                    <p class="grisClaro"> 1 año 8 meses</p>
+                    <p class="grisClaro"> 1 year 8 months</p>
                     <p>Curridabat, Costa Rica</p>
-                    <h4>Distribution SupervisorDistribution Supervisor</h4>
-                    <h4>Jornada completa</h4>
-                    <p class="grisClaro">oct. 2014 - oct. 2015 · 1 año 1 mes</p>
-                    <p>Maintained established levels of goods based on sales forecasts and demand to fulfill orders on time.
-                        Inventory management to facilitate accuracy and product availability.</p>
-                    <h4>Accounting AssistantAccounting Assistant</h4>
-                    <p class="grisClaro">mar. 2014 - oct. 2014 · 8 meses</p>
+                    <h4>Distribution Supervisor</h4>
+                    <p class="grisClaro">Oct. 2014 - Oct. 2015 · 1 year 1 months</p>
+                    <p>Maintained established levels of goods based on sales forecasts and demand to fulfill orders on time.</p>
+                    <p>Inventory management to facilitate accuracy and product availability.</p>
+                    <h4>Accounting Assistant</h4>
+                    <p class="grisClaro">Mar. 2014 - Oct. 2014 · 8 months</p>
                     <p>Applied mathematical abilities on daily basis to calculate and check figures in all areas of accounting system.</p>
                 </div>
                 <div class="experiencia">
-                    <h3>Pizza HutPizza Hut</h3>
-                    <h4>Inventory SupervisorInventory Supervisor</h4>
-                    <p class="grisClaro">nov. 2015 - nov. 2016 · 1 año 1 mes</p>
-                    <p>Pavas, Costa Rica</p>
-                    <p>Evaluated supplies and product inventory to check for quality and quantity.
-                        Used hand-held devices and computers to record and monitor inventory levels and completed audits to uncover and address inaccuracies.</p>
-                </div>
-                <div class="experiencia">
-                    <h3>Assistant for QA and Testing Scotiabank</h3>
-                    <p class="grisClaro"> dic. 2012 - mar. 2014 · 1 año 4 meses</p>
+                    <h3>Scotiabank</h3>
+                    <h4>Assistant for QA and Testing </h4>
                     <p>San Jose, Costa Rica</p>
+                    <p class="grisClaro"> Dec. 2012 - Mar. 2014 · 1 year 4 months</p>
                     <p>Identified and recommended changes to existing processes to improve accuracy, efficiency and quality service related to systems used in operations.</p>
+                </div>
+            </div>
+        </section>
+        <section class="hobbies" id="hobbies">
+            <h2 class="text-center">Hobbies</h2>
+            <div class="hobbies-contenido contenedor">
+                <p>In my spare time, I enjoy meeting up with my friends and family, as well as attending events, shows and exhibitions. I consider food as part of my hobbies while I enjoy cooking new dishes I also like going out and try new food or restaurants.
+                    As many people music is very important to me in my daily routine while also like keeping up with the latest developments in technology and busineess or economy. I spend time during the day following up on technology trends, updates and important figures in the industry.
+                    I have been leading teams in both learning and operations, so I love reading about news trends in learning and leadership to keep up to date in different methods or processes, even through social media or directly with the authors.
+                    </p>
+            </div>
+        </section>
+        <section class="referencias" id="references">
+            <h2 class="text-center">References</h2>
+            <div class="referencias-contenido contenedor">
+                <div class="referencia">
+                    <h3><i class="bi bi-people-fill"></i>Jonathan Araya</h3>
+                    <p>Site Lead | Amazon</p>
+                    <p> +506 8324-7048</p>
+                </div>
+                <div class="referencia">
+                    <h3><i class="bi bi-people-fill"></i>Ismael Mendez</h3>
+                    <p>D2AS Group Manager | Amazon</p>
+                    <p>+506 8874-9947</p>
+                </div>
+                <div class="referencia">
+                    <h3><i class="bi bi-people-fill"></i>Dominic Cruz</h3>
+                    <p>Technical Support Manager | VMWare</p>
+                    <p>+1 (179) 271-6958</p>
+                </div>
+                <div class="referencia">
+                    <h3><i class="bi bi-people-fill"></i>Whanderley Fonseca</h3>
+                    <p>Ssr Web UI Developer | Globant</p>
+                    <p>+506 8680-9168</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <p class="copyright">Todos los derechos reservados &copy;<span>Alexander Cordero</span></p>
+        <p class="powered">Powered By <span>Whanderley Fonseca Picado</span></p>
     </footer>
 </body>
 </html>
